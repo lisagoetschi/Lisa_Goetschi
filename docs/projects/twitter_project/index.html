@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lisa Götschi">
-<meta name="dcterms.date" content="2024-07-27">
+<meta name="dcterms.date" content="2022-12-01">
 
-<title>Lisa Götschi - Sentiment Analyse Twitter Daten</title>
+<title>Lisa Götschi - Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -64,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -110,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Sentiment Analyse Twitter Daten</h1>
+      <h1 class="title">Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">academic</div>
                 <div class="quarto-category">project</div>
@@ -132,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 27, 2024</p>
+        <p class="date">December 1, 2022</p>
       </div>
     </div>
     
@@ -143,20 +162,52 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="files_twitter_project/tweet_scraping_demo_code.ipynb.html"><i class="bi bi-journal-code"></i>tweet_scraping_demo_code.ipynb</a></li></ul></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="hallo" class="level3">
-<h3 class="anchored" data-anchor-id="hallo">Hallo</h3>
+<div id="project_text">
+<p>Im Herbstsemester 2022 habe ich im Rahmen eines Seminars <em>Political Geographies</em> eine Sentimentanalysis deutschsprachiger Tweets zum Ukrainekrieg durchgeführt. Die grundlegende Idee war es, Yashins Konzept des <em>“public cynism”</em> <span class="citation" data-cites="navaro-yashin2002">(<a href="#ref-navaro-yashin2002" role="doc-biblioref">Navaro-Yashin 2002</a>)</span> ausfindig zu machen. Grob dabei geht es um eine Art Ressentiment, welches sich nach einer Zeit der Aufruhr einstellt. Für den vorliegenden Fall wäre zu erwarten, dass eine grosse Anzahl Tweets abgesetzt wird nach wichtigen Ereignissen, diese aber nach und nach wieder abnehmen.</p>
+<p>Dafür habe ich in einem ersten Schritt Tweets über den Untersuchungszeitraum hinweg über die Twitter Research API gescraped. Anschliessend in kleineren Teilen die Daten für die Sentimentanalysis und weiteren Untersuchungen vorbereitet.</p>
+</div>
+<div>
+<p>Die aus der Analyse hervorgehenden Schlussfolgerungen der Ergebnisse.</p>
+<p>Die Ergebnisse sind eher explorativ und ein erster Einblick in das, was möglich ist, es gibt wahrscheinlich noch viel mehr zu finden. Ich wüsste nicht, wie ich das tun sollte, da ich nur über begrenzte Kenntnisse verfüge.</p>
+<p>Die Analyse gibt jedoch gute Anhaltspunkte für weitere Untersuchungen und Optimierungen, wie z. B. die Durchführung einer Konkordanz Analyse, bei der untersucht wird, welche Wörter zusammen vorkommen, aber auch das Entfernen von Nachrichtenagenturen aus der Quelle könnte ein klareres Bild des öffentlichen Zynismus ergeben.</p>
+</div>
+<div class="quarto-embed-nb-cell">
+
+<a class="quarto-notebook-link" id="nblink-1" href="files_twitter_project/tweet_scraping_demo_code.ipynb.html">Source: tweet_scraping_demo_code.ipynb</a></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files_twitter_project/tweetfrq.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Innerhalb von Monaten ändert sich die Häufigkeit, aber es ist ein Trend erkennbar. Der auf ein abnehmendes Interesse hin deutet. Die Gegenoffensive der Ukraine im August → machte das Thema wieder sichtbar.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files_twitter_project/polarity.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="files_twitter_project/sentiment_small.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-navaro-yashin2002" class="csl-entry" role="listitem">
+Navaro-Yashin, Yael. 2002. <em>Faces of the State: Secularism and Public Life in Turkey</em>. Princeton, N.J: Princeton University Press.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

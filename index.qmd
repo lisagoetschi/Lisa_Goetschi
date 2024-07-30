@@ -16,9 +16,11 @@ format:
     css: styles.css
 ---
 
-*Nach meinem Bachelor in Soziologie und Geografie in Zürich habe ich meinen Master in Soziologie in Bern begonnen. Sowie ein Gaststudium an der Universität Basel absolviert. Durch meine frühere Tätigkeit als Tutorin und die Arbeit als wissenschaftliche Hilfsassistentin im hat sich mein Interesse an quantitativer Datenanalyse und der Wissenschaft deutlich herauskristallisiert.*
+::: {style="text-align: justify;"}
+*Nach meinem Bachelor in Soziologie und Geografie in Zürich habe ich meinen Master in Soziologie an der Universität Bern begonnen. Sowie ein Gaststudium an der Universität Basel absolviert. Durch meine frühere Tätigkeit als Tutorin und die Arbeit als wissenschaftliche Hilfsassistentin hat sich mein Interesse an quantitativer Datenanalyse und der Wissenschaft deutlich herauskristallisiert.*
 
-*Neben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich intersektional mit räumlichen und sozioökonomischen Aspekten befassen.*
+*Neben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich (on- & offline) intersektional mit räumlichen und sozioökonomischen Aspekten befassen.*
+:::
 
 ```{=html}
 <br>

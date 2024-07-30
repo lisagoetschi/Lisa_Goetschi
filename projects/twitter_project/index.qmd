@@ -1,10 +1,33 @@
 ---
-title: "Sentiment Analyse Twitter Daten"
+title: "Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022"
 author: "Lisa Götschi"
-date: "2024-07-27"
+date: "2022-12-01"
 categories: [academic, project, code]
-image: "lisa_image.jpg"
-draft: true
+image: "files_twitter_project/tweetfrq.png"
+draft: false
+bibliography: references.bib
 ---
 
-### Hallo
+::: {#project_text}
+Im Herbstsemester 2022 habe ich im Rahmen eines Seminars *Political Geographies* eine Sentimentanalysis deutschsprachiger Tweets zum Ukrainekrieg durchgeführt. Die grundlegende Idee war es, Yashins Konzept des *"public cynism"* [@navaro-yashin2002] ausfindig zu machen. Grob dabei geht es um eine Art Ressentiment, welches sich nach einer Zeit der Aufruhr einstellt. Für den vorliegenden Fall wäre zu erwarten, dass eine grosse Anzahl Tweets abgesetzt wird nach wichtigen Ereignissen, diese aber nach und nach wieder abnehmen.
+
+Dafür habe ich in einem ersten Schritt Tweets über den Untersuchungszeitraum hinweg über die Twitter Research API gescraped. Anschliessend in kleineren Teilen die Daten für die Sentimentanalysis und weiteren Untersuchungen vorbereitet.
+:::
+
+<div>
+
+Die aus der Analyse hervorgehenden Schlussfolgerungen der Ergebnisse.
+
+Die Ergebnisse sind eher explorativ und ein erster Einblick in das, was möglich ist, es gibt wahrscheinlich noch viel mehr zu finden. Ich wüsste nicht, wie ich das tun sollte, da ich nur über begrenzte Kenntnisse verfüge.
+
+Die Analyse gibt jedoch gute Anhaltspunkte für weitere Untersuchungen und Optimierungen, wie z. B. die Durchführung einer Konkordanz Analyse, bei der untersucht wird, welche Wörter zusammen vorkommen, aber auch das Entfernen von Nachrichtenagenturen aus der Quelle könnte ein klareres Bild des öffentlichen Zynismus ergeben.
+
+</div>
+
+{{< embed files_twitter_project/tweet_scraping_demo_code.ipynb >}}
+
+![Innerhalb von Monaten ändert sich die Häufigkeit, aber es ist ein Trend erkennbar. Der auf ein abnehmendes Interesse hin deutet. Die Gegenoffensive der Ukraine im August → machte das Thema wieder sichtbar.](files_twitter_project/tweetfrq.png){fig-align="center"}
+
+![](files_twitter_project/polarity.png){fig-align="center"}
+
+![](files_twitter_project/sentiment_small.png){fig-align="center"}
