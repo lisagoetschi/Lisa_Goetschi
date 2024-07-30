@@ -1,0 +1,110 @@
+---
+title: "CV"
+about: 
+  template: solana
+  image: images/profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/lisa-goetschi/
+    - icon: github
+      text: Github
+      href: https://github.com/lisagoetschi
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+---
+
+[Download](CV_Lisa_Goetschi_DE.pdf){#myid .cvstyle}
+
+## Ausbildung
+
+**Master of Arts in Soziologie** - Universität Bern Sep. 2022 - heute
+
+*Mono: Soziologie\
+mit Gaststudium an der Universität Basel von Sep. 2023 bis Jul. 2024*
+
+**Bachelor of Arts in Sozialwissenschaften** - Universität Zürich Sep. 2018 - Jul. 2022
+
+*Major: Soziologie und Minor: Geographie\
+Abschlussnote: 5.1\
+Bachelorarbeit: Subjektives Wohlbefinden -- ein Graben zwischen Stadt und Land?*
+
+**Gymnasiale Matur** - Gymnasium am Münsterplatz Basel Aug. 2014 - Jun. 2017
+
+*Bilinguale Matur (D/E) & International Baccalaureate (IB)\
+Schwerpunkt: Englisch\
+Maturarbeit: Sustainable Fashion - Comparison of two brands H&M conscious and Coop Naturaline.*
+
+## Arbeitserfahrung
+
+Co-founder fragnach **Dez 2020 - heute\
+**fragnach.ch Zürich
+
+*Quantitative Methodenberatung und Projektbetreuung\
+Erstellen von Umfragen\
+Recherche von Theorien und Studien*
+
+------------------------------------------------------------------------
+
+Hilfsassistentin im Projekt: "The neighborhood in the cloud" **Mai 2022 - Jul. 2024**\
+Universität Bern - Institut für Soziologie
+
+*Unterstützung in der Umsetzung des Projektes z.B. Daten- und Literaturrecherche, Aufbereiten von Daten, eigenständige quantitative Analysen.*
+
+------------------------------------------------------------------------
+
+Tutorin für Techniken wissenschaftlichen Arbeitens **Sep. 2021 - Feb. 2022\
+**Universität Zürich
+
+*Leiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen*
+
+------------------------------------------------------------------------
+
+Tutorin für empirische Sozialforschung und Umfragemethoden **Sep. 2020 - Jun. 2022**\
+Universität Zürich
+
+*Leiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen, Gruppenbetreuung*
+
+## Weitere Erfahrung
+
+-   Hilfsassistentin bei Dr. Robert Schäfer **Dez. 2023\
+    **Universität Basel - Departement Gesellschaftswissenschaften
+
+    -   Kodieren von Interviews mit ATLAS.ti
+
+-   Teilnehmerin Fundraising Academy **Jan. 2021 - Apr. 2021**\
+    Digital Innovation Lab AG, Bern
+
+    -   Lernen von Strategien zum Start-up Aufbau, Investorenfindung
+
+    -   Erstellen von Businessplan und Marketingstrategien
+
+-   Soziologie-Fachverein Vorstandsmitglied **Sep. 2019 - Sep. 2021**\
+    Universität Zürich
+
+    -   Verantwortlich für Design und Druck von Postern, Flyern etc. & Eventorganisation
+
+## IT Kompetenzen
+
+|                                               |                      |
+|-----------------------------------------------|----------------------|
+| Statistiksoftware R & STATA                   | sehr gute Kenntnisse |
+| Microsoft Office (Word, Powerpoint und Excel) | sehr gute Kenntnisse |
+| Adobe InDesign, Illustrator                   | gute Kenntnisse      |
+| SNAP & QGIS                                   | Grundkentnisse       |
+| WordPress, CSM Magnolia                       | Grundkentnisse       |
+
+## Sprachen
+
+|             |                          |
+|-------------|--------------------------|
+| Deutsch     | Muttersprache            |
+| Englisch    | Zweisprachige Matur (C1) |
+| Französisch | Grundlagenkenntisse (A1) |
+| Italienisch | Grundlagenkenntisse (A1) |
+
+## Hobbys und Interessen
+
+Mit Yoga und ausgiebigen Spaziergängen mit meinem Hund halte ich mich fit. Meditation und Häkeln geben mit einen Ausgleich zum Arbeitsalltag und durch das Lesen von Sachliteratur wie auch Romanen erweitere ich meinen Wissenshorizont.

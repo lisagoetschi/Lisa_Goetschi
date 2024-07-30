@@ -1,0 +1,10 @@
+---
+title: "Sentiment Analyse Twitter Daten"
+author: "Lisa Götschi"
+date: "2024-07-27"
+categories: [academic, project, code]
+image: "lisa_image.jpg"
+draft: true
+---
+
+### Hallo

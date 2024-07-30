@@ -1,12 +1,29 @@
 ---
-title: "Lisa_Goetschi"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Über mich"
+about:
+  template: broadside
+  image: images/about_image.png
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/lisa-goetschi/
+    - icon: github
+      text: Github
+      href: https://github.com/lisagoetschi
+format:
+  html:
+    theme: sandstone
+    css: styles.css
 ---
+
+*Nach meinem Bachelor in Soziologie und Geografie in Zürich habe ich meinen Master in Soziologie in Bern begonnen. Sowie ein Gaststudium an der Universität Basel absolviert. Durch meine frühere Tätigkeit als Tutorin und die Arbeit als wissenschaftliche Hilfsassistentin im hat sich mein Interesse an quantitativer Datenanalyse und der Wissenschaft deutlich herauskristallisiert.*
+
+*Neben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich intersektional mit räumlichen und sozioökonomischen Aspekten befassen.*
+
+```{=html}
+<br>
+<div class="container">
+  <div class="block"> <a href="cv.qmd">CV</a></div>
+  <div class="block"><a href="projects.qmd">Projekte</a></div>
+</div>
+```

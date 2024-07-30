@@ -1,19 +1,27 @@
 project:
   type: website
   output-dir: docs
+  
 website:
   title: "Lisa Götschi"
   navbar:
     right:
-      - about.qmd
+      - cv.qmd
+      - projects.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lisa-goetschi/
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/lisagoetschi
+  page-footer:
+    background: light 
+    left: Copyright 2024, Lisa Götschi 
+    right: This website is built with [github](https://github.com/lisagoetschi){target=_blank}, [R](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
-
+    theme: 
+    - sandstone
+    - styles.scss
+    mainfont: Lato
 editor: visual
 

@@ -3,9 +3,10 @@ title: "erster Post"
 author: "Lisa Götschi"
 date: "2024-07-27"
 categories: [personal, life]
-image: "image.jpg"
+image: "lisa_image.jpg"
+draft: true
 ---
 
-### Hallo 
+### Hallo
 
-Ich bin Lisa 26. Soziologin und interessiert an der gesellschaft... .
+Ich bin Lisa 26. Soziologin und interessiert an der Gesellschaft... .

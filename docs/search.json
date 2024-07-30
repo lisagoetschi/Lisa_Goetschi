@@ -1,37 +1,107 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "projects/bachelor_arbeit/index.html",
+    "href": "projects/bachelor_arbeit/index.html",
+    "title": "Bachelorarbeit und Poster",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+    "text": "Titel: Subjektives Wohlbefinden – ein Graben zwischen Stadt und Land? Die Stadt-Land-Differenz im subjektiven Wohlbefinden der Schweizer Bevölkerung und der Einfluss des individuellen Sozialkapitals\nMeine Bachelorarbeit habe ich Herbstsemester 2021 verfasst, dabei habe ich mich mit dem Sozialkapital zwischen Stadt und Land beschäftigt.\nZum Poster."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "projects/cia/index.html",
+    "href": "projects/cia/index.html",
+    "title": "fragnach - Quatiative Unterstützung Studie ‘Cannabis im Alltag’",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Innerhalb des zusammen mit Swassthi Sarma gegründeten Unternehmen fragnach habe ich die Forschungsteam Unexplored Realities der Universität St.Gallen in ihrer Studie zum Cannabiskonsum im Alltag unterstützen dürfen.\nNeben der Anpassung der Umfrage und deskriptiven statistischen Analysen habe ich in einer explorativen Clusteranalyse vorläufige Ergebnisse zu möglichen Konsumgruppen innerhalb der Konsument:innen herausarbeiten können. Diese durfte ich im Mai 2023 an einem Forschungsgespräch zur Zukunft der Cannabisforschung an der Universität St.Gallen vorstellen."
   },
   {
-    "objectID": "posts/first-post/index.html",
-    "href": "posts/first-post/index.html",
-    "title": "erster Post",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projekte",
     "section": "",
-    "text": "Hallo\nIch bin Lisa 26. Soziologin und interessiert an der gesellschaft… ."
+    "text": "fragnach - Quatiative Unterstützung Studie ‘Cannabis im Alltag’\n\n\n\nacademic\n\n\nresearch\n\n\nfragnach\n\n\n\n\n\n\n\nLisa Götschi\n\n\nJul 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBachelorarbeit und Poster\n\n\n\nacademic\n\n\nwriting\n\n\n\n\n\n\n\nLisa Götschi\n\n\nJul 27, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Lisa_Goetschi",
+    "title": "Über mich",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nerster Post\n\n\n\n\n\n\n\npersonal\n\n\nlife\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2024\n\n\nLisa Götschi\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Nach meinem Bachelor in Soziologie und Geografie in Zürich habe ich meinen Master in Soziologie in Bern begonnen. Sowie ein Gaststudium an der Universität Basel absolviert. Durch meine frühere Tätigkeit als Tutorin und die Arbeit als wissenschaftliche Hilfsassistentin im hat sich mein Interesse an quantitativer Datenanalyse und der Wissenschaft deutlich herauskristallisiert.\nNeben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich intersektional mit räumlichen und sozioökonomischen Aspekten befassen.\n\n\n   CV\n  Projekte"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Über mich",
     "section": "",
-    "text": "About this blog"
+    "text": "Neben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich intersektional mit räumlichen und sozioökonomischen Aspekten befassen."
+  },
+  {
+    "objectID": "about.html#arbeitserfahrung",
+    "href": "about.html#arbeitserfahrung",
+    "title": "Über mich",
+    "section": "Arbeitserfahrung",
+    "text": "Arbeitserfahrung\n\nCo-founder fragnach Dez 2020 - heute\nHilfsassistentin im Projekt: “The neighborhood in the cloud” Mai 2022 - Jul. 2024\nUniversität Bern - Institut für Soziologie\nTutorin für Techniken wissenschaftlichen Arbeitens Sep. 2021 - Feb. 2022\nUniversität Zürich\nTutorin für empirische Sozialforschung und Umfragemethoden Sep. 2020 - Jun. 2022\nUniversität Zürich"
+  },
+  {
+    "objectID": "about.html#ausbildung",
+    "href": "about.html#ausbildung",
+    "title": "Über mich",
+    "section": "Ausbildung",
+    "text": "Ausbildung\n\nMaster of Arts in Soziologie - Universität Bern Sep. 2022 - heute\nBachelor of Arts in Sozialwissenschaften - Universität Zürich Sep. 2018 - Jul. 2022\nGymnasiale Matur - Gymnasium am Münsterplatz Basel Aug. 2014 - Jun. 2017"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download"
+  },
+  {
+    "objectID": "cv.html#ausbildung",
+    "href": "cv.html#ausbildung",
+    "title": "CV",
+    "section": "Ausbildung",
+    "text": "Ausbildung\nMaster of Arts in Soziologie - Universität Bern Sep. 2022 - heute\nMono: Soziologie\nmit Gaststudium an der Universität Basel von Sep. 2023 bis Jul. 2024\nBachelor of Arts in Sozialwissenschaften - Universität Zürich Sep. 2018 - Jul. 2022\nMajor: Soziologie und Minor: Geographie\nAbschlussnote: 5.1\nBachelorarbeit: Subjektives Wohlbefinden – ein Graben zwischen Stadt und Land?\nGymnasiale Matur - Gymnasium am Münsterplatz Basel Aug. 2014 - Jun. 2017\nBilinguale Matur (D/E) & International Baccalaureate (IB)\nSchwerpunkt: Englisch\nMaturarbeit: Sustainable Fashion - Comparison of two brands H&M conscious and Coop Naturaline."
+  },
+  {
+    "objectID": "cv.html#arbeitserfahrung",
+    "href": "cv.html#arbeitserfahrung",
+    "title": "CV",
+    "section": "Arbeitserfahrung",
+    "text": "Arbeitserfahrung\nCo-founder fragnach Dez 2020 - heute\nfragnach.ch Zürich\nQuantitative Methodenberatung und Projektbetreuung\nErstellen von Umfragen\nRecherche von Theorien und Studien\n\nHilfsassistentin im Projekt: “The neighborhood in the cloud” Mai 2022 - Jul. 2024\nUniversität Bern - Institut für Soziologie\nUnterstützung in der Umsetzung des Projektes z.B. Daten- und Literaturrecherche, Aufbereiten von Daten, eigenständige quantitative Analysen.\n\nTutorin für Techniken wissenschaftlichen Arbeitens Sep. 2021 - Feb. 2022\nUniversität Zürich\nLeiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen\n\nTutorin für empirische Sozialforschung und Umfragemethoden Sep. 2020 - Jun. 2022\nUniversität Zürich\nLeiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen, Gruppenbetreuung"
+  },
+  {
+    "objectID": "cv.html#weitere-erfahrung",
+    "href": "cv.html#weitere-erfahrung",
+    "title": "CV",
+    "section": "Weitere Erfahrung",
+    "text": "Weitere Erfahrung\n\nHilfsassistentin bei Dr. Robert Schäfer Dez. 2023\nUniversität Basel - Departement Gesellschaftswissenschaften\n\nKodieren von Interviews mit ATLAS.ti\n\nTeilnehmerin Fundraising Academy Jan. 2021 - Apr. 2021\nDigital Innovation Lab AG, Bern\n\nLernen von Strategien zum Start-up Aufbau, Investorenfindung\nErstellen von Businessplan und Marketingstrategien\n\nSoziologie-Fachverein Vorstandsmitglied Sep. 2019 - Sep. 2021\nUniversität Zürich\n\nVerantwortlich für Design und Druck von Postern, Flyern etc. & Eventorganisation"
+  },
+  {
+    "objectID": "cv.html#it-kompetenzen",
+    "href": "cv.html#it-kompetenzen",
+    "title": "CV",
+    "section": "IT Kompetenzen",
+    "text": "IT Kompetenzen\n\n\n\nStatistiksoftware R & STATA\nsehr gute Kenntnisse\n\n\nMicrosoft Office (Word, Powerpoint und Excel)\nsehr gute Kenntnisse\n\n\nAdobe InDesign, Illustrator\ngute Kenntnisse\n\n\nSNAP & QGIS\nGrundkentnisse\n\n\nWordPress, CSM Magnolia\nGrundkentnisse"
+  },
+  {
+    "objectID": "cv.html#sprachen",
+    "href": "cv.html#sprachen",
+    "title": "CV",
+    "section": "Sprachen",
+    "text": "Sprachen\n\n\n\nDeutsch\nMuttersprache\n\n\nEnglisch\nZweisprachige Matur (C1)\n\n\nFranzösisch\nGrundlagenkenntisse (A1)\n\n\nItalienisch\nGrundlagenkenntisse (A1)"
+  },
+  {
+    "objectID": "cv.html#hobbys-und-interessen",
+    "href": "cv.html#hobbys-und-interessen",
+    "title": "CV",
+    "section": "Hobbys und Interessen",
+    "text": "Hobbys und Interessen\nMit Yoga und ausgiebigen Spaziergängen mit meinem Hund halte ich mich fit. Meditation und Häkeln geben mit einen Ausgleich zum Arbeitsalltag und durch das Lesen von Sachliteratur wie auch Romanen erweitere ich meinen Wissenshorizont."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
   }
 ]

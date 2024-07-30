@@ -1,0 +1,13 @@
+---
+title: "Bachelorarbeit und Poster"
+author: "Lisa Götschi"
+date: "2024-07-27"
+categories: [academic, writing]
+image: "ba_image.jpg"
+---
+
+#### Titel: Subjektives Wohlbefinden -- ein Graben zwischen Stadt und Land? Die Stadt-Land-Differenz im subjektiven Wohlbefinden der Schweizer Bevölkerung und der Einfluss des individuellen Sozialkapitals
+
+Meine Bachelorarbeit habe ich Herbstsemester 2021 verfasst, dabei habe ich mich mit dem Sozialkapital zwischen Stadt und Land beschäftigt.
+
+Zum [Poster](BA_Poster_Lisa_Goetschi.pdf).
