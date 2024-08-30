@@ -4,10 +4,17 @@ author: "Lisa Götschi"
 date: "2021-09-01"
 categories: [academic, writing]
 image: "ba_image.jpg"
+bibliography: Quellen.bib
 ---
 
 ::: {#project_text}
-Unter dem Titel **Subjektives Wohlbefinden -- ein Graben zwischen Stadt und Land? Die Stadt-Land-Differenz im subjektiven Wohlbefinden der Schweizer Bevölkerung und der Einfluss des individuellen Sozialkapitals,** habe ich meine Bachelorarbeit im Herbstsemester 2021 verfasst. Darin habe ich mich mit dem Sozialkapital in der Schweiz zwischen Stadt und Land beschäftigt.
+Unter dem Titel **Subjektives Wohlbefinden -- ein Graben zwischen Stadt und Land? Die Stadt-Land-Differenz im subjektiven Wohlbefinden der Schweizer Bevölkerung und der Einfluss des individuellen Sozialkapitals** habe ich meine Bachelorarbeit im Herbstsemester 2021 verfasst.
+
+Darin habe ich mich mit dem subjektiven Wohlbefinden der Stadt- und Landbevölkerung der Schweiz beschäftigt, um mögliche Unterschiede anhand der Art des Sozialkapitals zu erklären.
+
+In «entwickelten» Ländern wurde beobachtet, dass «Personen aus ländlichen Gebieten tendenziell ein höheres subjektives Wohlbefinden als Stadtbewohner:innen haben» [@sørensen2021], bezeichnet wird dies als «Rural Happiness Paradox».
+
+Für die Schweiz konnte ich es in diesem Fall nicht bestätigen. Eine mögliche Erklärung könnte sein, dass die Schweiz im Vergleich zu anderen Ländern kleinere «Grossstädte» hat, was auch den Unterschied zwischen Stadt und Land geringer erscheinen lässt.
 
 Direkt zum [Poster](BA_Poster_Lisa_Goetschi.pdf).
 :::

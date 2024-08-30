@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lisa Götschi">
-<meta name="dcterms.date" content="2022-12-01">
 
-<title>Lisa Götschi - Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022</title>
+<title>Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,15 +67,15 @@ div.csl-indent {
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken"
   }
 }</script>
 
@@ -90,12 +89,12 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Lisa Götschi</span>
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/Lisa.png" alt="" class="navbar-logo">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -140,7 +139,6 @@ div.csl-indent {
 <h1 class="title">Sentiment Analysis Twitter Daten zum Ukrainekrieg 2022</h1>
   <div class="quarto-categories">
     <div class="quarto-category">academic</div>
-    <div class="quarto-category">project</div>
     <div class="quarto-category">code</div>
   </div>
   </div>
@@ -150,16 +148,16 @@ div.csl-indent {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
     <div class="quarto-title-meta-contents">
              <p>Lisa Götschi </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 1, 2022</p>
+      <p class="date">1. Dezember 2022</p>
     </div>
   </div>
   
@@ -170,40 +168,42 @@ div.csl-indent {
 </header>
 
 <div id="project_text">
-<p>Im Herbstsemester 2022 habe ich im Rahmen eines Seminars <em>Political Geographies</em> eine Sentimentanalysis deutschsprachiger Tweets zum Ukrainekrieg durchgeführt. Die grundlegende Idee war es, Yashins Konzept des <em>“public cynism”</em> <span class="citation" data-cites="navaro-yashin2002">(<a href="#ref-navaro-yashin2002" role="doc-biblioref">Navaro-Yashin 2002</a>)</span> ausfindig zu machen. Grob dabei geht es um eine Art Ressentiment, welches sich nach einer Zeit der Aufruhr einstellt. Für den vorliegenden Fall wäre zu erwarten, dass eine grosse Anzahl Tweets abgesetzt wird nach wichtigen Ereignissen, diese aber nach und nach wieder abnehmen.</p>
-<p>Dafür habe ich in einem ersten Schritt Tweets über den Untersuchungszeitraum hinweg über die Twitter Research API gescraped. Anschliessend in kleineren Teilen die Daten für die Sentimentanalysis und weiteren Untersuchungen vorbereitet.</p>
+<p>Im Herbstsemester 2022 habe ich im Rahmen eines Seminars <em>Political Geographies</em> eine Sentiment Analysis deutschsprachiger Tweets zum Ukrainekrieg durchgeführt. Die grundlegende Idee war es, Yashins Konzept des “<em>public cynism”</em> <span class="citation" data-cites="navaro-yashin2002">(<a href="#ref-navaro-yashin2002" role="doc-biblioref">Navaro-Yashin 2002</a>)</span> ausfindig zu machen. ausfindig zu machen. Kurzum bezeichnet es eine Art Ressentiment, welches sich nach einer Zeit der Aufruhr einstellt. Für den vorliegenden Fall wäre zu erwarten, dass eine grosse Anzahl Tweets abgesetzt wird nach wichtigen Ereignissen, diese aber nach und nach abnehmen und das Thema an Bedeutung verliert.<br>
+Dafür habe ich in einem ersten Schritt Tweets über den Untersuchungszeitraum hinweg mit der Twitter Research API gescraped um anschliessend die Tweets in kleinere Datensets aufgeteilt für die Sentiment Analysis und weiteren Untersuchungen vorzubereiten.</p>
 </div>
-<div>
-<p>Die aus der Analyse hervorgehenden Schlussfolgerungen der Ergebnisse.</p>
-<p>Die Ergebnisse sind eher explorativ und ein erster Einblick in das, was möglich ist, es gibt wahrscheinlich noch viel mehr zu finden. Ich wüsste nicht, wie ich das tun sollte, da ich nur über begrenzte Kenntnisse verfüge.</p>
-<p>Die Analyse gibt jedoch gute Anhaltspunkte für weitere Untersuchungen und Optimierungen, wie z. B. die Durchführung einer Konkordanz Analyse, bei der untersucht wird, welche Wörter zusammen vorkommen, aber auch das Entfernen von Nachrichtenagenturen aus der Quelle könnte ein klareres Bild des öffentlichen Zynismus ergeben.</p>
-</div>
+<section id="die-aus-der-analyse-hervorgehenden-schlussfolgerungen-der-ergebnisse." class="level3">
+<h3 class="anchored" data-anchor-id="die-aus-der-analyse-hervorgehenden-schlussfolgerungen-der-ergebnisse."><strong>Die aus der Analyse hervorgehenden Schlussfolgerungen der Ergebnisse.</strong></h3>
+<p>Die Ergebnisse sind explorativ und geben einen ersten Einblick in das, was möglich ist. Wahrscheinlich liesse sich noch weitaus mehr Information aus den Daten gewinnen. Da ich nur über begrenzte Kenntnisse innerhalb der statistischen Textanalyse verfüge, beschränken sich die Berechnungen auf die Tweethäufigkeit, die Polarität sowie Sentiment Analyse.</p>
+<p>Die Analyse gibt jedoch gute Anhaltspunkte für weitere Untersuchungen und Optimierungen, wie z. B. die Durchführung einer Konkordanz Analyse, bei der untersucht wird, welche Wörter zusammen vorkommen, aber auch das Entfernen von Nachrichtenagenturen aus der Quelle könnte ein klareres Bild des <em>“public cynism”</em> ergeben.</p>
+</section>
 <div class="quarto-embed-nb-cell">
 
-<a class="quarto-notebook-link" id="nblink-1" href="files_twitter_project/tweet_scraping_demo_code.ipynb.html">Source: tweet_scraping_demo_code.ipynb</a></div>
+<a class="quarto-notebook-link" id="nblink-1" href="files_twitter_project/tweet_scraping_demo_code.ipynb.html">Quelle: tweet_scraping_demo_code.ipynb</a></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="files_twitter_project/tweetfrq.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Innerhalb von Monaten ändert sich die Häufigkeit, aber es ist ein Trend erkennbar. Der auf ein abnehmendes Interesse hin deutet. Die Gegenoffensive der Ukraine im August → machte das Thema wieder sichtbar.</figcaption>
+<figcaption class="figure-caption">Innerhalb von Monaten ändert sich die Tweethäufigkeit. Allerdings lässt sich über die Zeit eine Abnahme der Häufigkeit erkennen. Dieser Trend deutet auf ein abnehmendes Interesse hin, welcher mit der erwarteten Auswirkung von “public cynism” einhergeht. Ersichtlich ist auch die erneut zunehmende Häufigkeit im August, womöglich ausgelöst durch die Gegenoffensive der Ukraine in diesem Monat. Das Thema des Ukrainekriegs gewinnt wieder an Aktualität.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="files_twitter_project/polarity.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Das Zählen der negativen und positiven Wörter aller Tweets eines Monats zeigt, dass auf beide Seiten eine ausgeglichene Verteilung besteht.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="files_twitter_project/sentiment_small.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Diese Neutralität, die in den Tweets besteht, lässt sich ebenfalls auch im Vergleich von drei gewählten Wochen innerhalb des Untersuchungszeitraumes finden. Die Werte liegen alle nahe bei null, wobei das Sentiment in der letzten Woche verglichen zu den anderen beiden Zeitpunkten am negativsten ausfällt.</figcaption>
 </figure>
 </div>
 
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Literatur</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-navaro-yashin2002" class="csl-entry" role="listitem">
-Navaro-Yashin, Yael. 2002. <em>Faces of the State: Secularism and Public Life in Turkey</em>. Princeton, N.J: Princeton University Press.
+Navaro-Yashin, Yael. 2002. <em>Faces of the state: secularism and public life in Turkey</em>. Princeton, N.J: Princeton University Press.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -260,12 +260,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

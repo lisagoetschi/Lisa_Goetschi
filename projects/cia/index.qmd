@@ -7,7 +7,7 @@ image: "cia_image.svg"
 ---
 
 ::: {#project_text}
-Innerhalb des zusammen mit Swassthi Sarma gegründeten Unternehmen [fragnach](https://www.fragnach.ch/cannabisalltag) habe ich das Forschungsteam [Unexplored Realities der Universität St.Gallen](https://sfs.unisg.ch/de/forschung/forschungsverbund-unexplored-realities/) in ihrer Studie zum Cannabiskonsum im Alltag unterstützen dürfen.
+Innerhalb des zusammen mit Swassthi Sarma gegründeten Unternehmen [fragnach](https://www.fragnach.ch/cannabisalltag) habe ich das Forschungsteam [Unexplored Realities der Universität St. Gallen](https://sfs.unisg.ch/de/forschung/forschungsverbund-unexplored-realities/) in ihrer Studie zum Cannabiskonsum im Alltag unterstützen dürfen.
 
-Neben der Anpassung der Umfrage und deskriptiven statistischen Analysen habe ich in einer explorativen Clusteranalyse vorläufige Ergebnisse zu möglichen Konsumgruppen innerhalb der Konsument:innen herausarbeiten können. Diese durfte ich im Mai 2023 an einem Forschungsgespräch zur Zukunft der Cannabisforschung an der Universität St.Gallen vorstellen.
+Neben der Anpassung der Umfrage und deskriptiven statistischen Analysen habe ich in einer explorativen Clusteranalyse vorläufige Ergebnisse zu möglichen Konsumgruppen innerhalb der Konsument:innen herausarbeiten können. Diese durfte ich im Mai 2023 an einem Forschungsgespräch zur Zukunft der Cannabisforschung an der Universität St. Gallen vorstellen.
 :::

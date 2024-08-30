@@ -3,8 +3,9 @@ project:
   output-dir: docs
   
 website:
-  title: "Lisa Götschi"
+  title: ""
   navbar:
+    logo: images/Lisa.png
     right:
       - cv.qmd
       - projects.qmd
@@ -16,6 +17,8 @@ website:
     background: light 
     left: Copyright 2024, Lisa Götschi 
     right: This website is built with [github](https://github.com/lisagoetschi){target=_blank}, [R](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
+
+lang: de
 
 format:
   html:
