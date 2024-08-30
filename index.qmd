@@ -10,8 +10,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/lisagoetschi
-navbar:
-    logo: images/Lisa.png
 format:
   html:
     theme: sandstone

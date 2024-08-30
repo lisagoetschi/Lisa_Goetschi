@@ -3,9 +3,8 @@ project:
   output-dir: docs
   
 website:
-  title: ""
+  title: "Lisa Götschi"
   navbar:
-    logo: images/Lisa.png
     right:
       - cv.qmd
       - projects.qmd
