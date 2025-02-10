@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lisa Götschi">
+
+<title>Computational Social Science short project results – Lisa Götschi</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-69c3931799ab603d7dcea1b6fe8301bd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Lisa Götschi</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projekte</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lisa-goetschi/"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lisagoetschi"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Computational Social Science short project results</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">academic</div>
+    <div class="quarto-category">code</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor:in</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lisa Götschi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">31. Januar 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div id="project_text">
+<p>For a Computational Social Science course in the Fall Semester of 2024 I have explored data from the Swiss parliament regarding the topic of data security and tried using OpenAI’s chatGPT as a support for text classification. Here the results of this small project are summarized.</p>
+</div>
+<section id="general-idea" class="level2">
+<h2 class="anchored" data-anchor-id="general-idea"><strong>General Idea</strong></h2>
+<p>Looking at data from the Swiss parliament such as businesses, and possibly corresponding session transcripts concerning the topic of data security and how to handle data produced (by the private sector). Roughly building on the concept by Fourcade and Healy (2024) of the Ordinal Society in which the measuring, ranking and ordering of people based on data is the underling concept <span class="citation" data-cites="fourcade2024">(<a href="#ref-fourcade2024" role="doc-biblioref">Fourcade und Healy 2024</a>)</span>. In their work the concept of <em>eigencapital</em> is discussed. “We argue that the digital information available about an individual, accumulated over one’s life and encapsulating the totality of her relations as expressed through digital traces, is a form of capital. In contrast to Bourdieu, we emphasize the growing technological inscription of this capital and its high dimensionality. Because of this, we call it eigencapital.” <span class="citation" data-cites="fourcade">(<a href="#ref-fourcade" role="doc-biblioref">Fourcade und Healy 2021</a>)</span> This is what sparked the interest in the topic and how this can be applied to Switzerland.</p>
+<p>Research Question The main question I focus on is:</p>
+<ol type="1">
+<li>How do the frequency of submitted business on individual data security within the Swiss Parliament change over time?</li>
+</ol>
+<p>A simple hypothesis to test in that regard is that certain events do influence the frequency submitted. e.g.&nbsp;Peaks corresponding to the implementation of Open Government Data or the Cambridge Analytica scandal. I would expect peaks to be delayed based on the reactionary nature.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods"><strong>Methods</strong></h2>
+<p>The methods used from the computational science course are to some extent data collection via API. Luckily there has been a package created to access the Swiss Parliament API in a convenient way. The package swissparl is used to obtain the raw data of the businesses and other relevant data. This data then is prepared and descriptively analysed by visualizing the businesses overtime, in addition with a document frequency matrix, the most used words are looked at and used to get an overview of the selected businesses concerning the topic at hand.</p>
+<p>Since filed of interest is fuzzy the selection of relevant businesses is equally unclear. Therefore the manual selection of businesses are additionally classified with the use of chatGPT as a text classification tool. The idea is to have it classify the selected text by providing a value indicating if the business falls into the field of interest. These different search methods are compared to have an idea of how good chatGPT can be used for classification.</p>
+<p>words to look out for: Datenschutz, Digitalisierung, Bevölkerungsdaten, Open Data, Open Government Data, offene Verwaltungsdaten, Internetsicherheit</p>
+<p>Lastly the text of the selected businesses get analysed using a structured topic model. In order to find if the sessions can be considered to fall into different distinct topics.</p>
+</section>
+<section id="process" class="level2">
+<h2 class="anchored" data-anchor-id="process"><strong>Process</strong></h2>
+<p>Preparation The first step after the general idea and RQ development was familiarizing myself with the API, data and the structures of both. Within this research I came across the swissparl package created by <span class="citation" data-cites="zumbach2020">(<a href="#ref-zumbach2020" role="doc-biblioref">Zumbach 2020</a>)</span>. I also realized that the API I was first looking at is the old web services and that there is a newer one.</p>
+<section id="getting-the-data" class="level4">
+<h4 class="anchored" data-anchor-id="getting-the-data"><strong>Getting the data</strong></h4>
+<p>After getting familiar with the package swissparl <span class="citation" data-cites="zumbach2020">(<a href="#ref-zumbach2020" role="doc-biblioref">Zumbach 2020</a>)</span> I found more businesses than via the old web service API I first used. In total there are 61838 entries in German.</p>
+</section>
+<section id="first-look" class="level4">
+<h4 class="anchored" data-anchor-id="first-look"><strong>First look</strong></h4>
+<p>The provided tags gives a first overview of the data. In total there are 28 tags that can be accessed via the API as well. This helps to sort the business into different aspects unfortunately there is no tag concerned specifically with the digital domain. It is clear that over time the number of businesses increased that probably is due to the increased digitalisation and the better availability of data.</p>
+<p><img src="graphs/overview_plot.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/overview_tags.png" class="img-fluid figure-img"></p>
+<figcaption>This exploration of the themes helped me to get a understanding of the data but also I was able to deduct that there are no themes that are explicitly referencing my area of interest.</figcaption>
+</figure>
+</div>
+</section>
+<section id="preparation-of-raw-data" class="level3">
+<h3 class="anchored" data-anchor-id="preparation-of-raw-data"><strong>Preparation of raw data</strong></h3>
+<p>The preparation for the later selection followed these steps: Reducing the raw data set to the columns of interest. 1. Creating a corpus and tokenizing it, with most of the possible functions “switched off”. With this there is more control over the steps. 2. Finding relevant collocations, first three word long and in a second step the two word collocations. The selection of the multiwords was done manually because the list was relatively short. 3. Removing punctuation, lower case, the removal of stop words and empty tokens, where the last steps done. The stemming of words was left out because I believe the titles of business are already short and the stemming could remove important information.</p>
+<section id="finding-the-relevant-businesses" class="level4">
+<h4 class="anchored" data-anchor-id="finding-the-relevant-businesses"><strong>Finding the relevant businesses</strong></h4>
+<p>The main focus is the selection. In order to do this effectively I have thought about words that are in some way connected to the topic of interest and are not too restrictive. In the first trails I realized that there are word containing parts of what I was search for: e.g.&nbsp;web is part of gewebe or daten is part of soldaten. Both not what I want to look at.</p>
+<p>I therefore adapted the patter with word boundaries and quantifiers to restrict the search more. After some back and forth between adapting the regex pattern and looking at the output I additionally removed words I did not want to include but where still selected, such as soldaten or tier.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 03.02 find the relevant businesses ---- </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>search_pattern1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"daten|datensicherheit|datenschutz|internet|online|digital|(web){1}</span><span class="sc">\\</span><span class="st">b|</span><span class="sc">\\</span><span class="st">b(KI){1}</span><span class="sc">\\</span><span class="st">b|</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">                     open_government_data|cyber"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>toks_daten_search1 <span class="ot">&lt;-</span> <span class="fu">kwic</span>(toks, <span class="at">pattern =</span> search_pattern1, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                           <span class="at">valuetype =</span> <span class="st">"regex"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">window =</span> <span class="dv">5</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                           <span class="at">case_insensitive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># filter for words that do not fit such as soldaten, tier </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>toks_daten_search1_clean <span class="ot">&lt;-</span> toks_daten_search1 <span class="sc">%&gt;%</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"soldaten|tier"</span>, keyword))</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 03.02.01 Select the relevant variables form the search ----</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>toks_daten_search1_clean<span class="sc">$</span>ID <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(toks_daten_search1_clean<span class="sc">$</span>docname)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>business_search1 <span class="ot">&lt;-</span> </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">inner_join</span>(business_titles, </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>             toks_daten_search1_clean,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>             <span class="at">by =</span> <span class="st">"ID"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(from, to, pre, pattern, post, docname, keyword))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>business_search1 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(business_search1) <span class="sc">%&gt;%</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">broad =</span> <span class="dv">1</span>)</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicated rows </span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">duplicated</span>(business_search1<span class="sc">$</span>ID))  </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>duplicate_rows <span class="ot">&lt;-</span> business_search1[<span class="fu">duplicated</span>(business_search1<span class="sc">$</span>ID) <span class="sc">|</span> <span class="fu">duplicated</span>(business_search1<span class="sc">$</span>ID, <span class="at">fromLast =</span> <span class="cn">TRUE</span>), ]</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>business_search1 <span class="ot">&lt;-</span> business_search1[<span class="sc">!</span><span class="fu">duplicated</span>(business_search1<span class="sc">$</span>ID), ]</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co"># save</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(business_search1, <span class="at">file =</span> <span class="st">"./data/broad_search_businesses.RData"</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 03.02.02 Narrow down the search of relevant data ---- </span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>search_pattern2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"daten|datensicherheit|datenschutz|</span><span class="sc">\\</span><span class="st">b(KI){1}</span><span class="sc">\\</span><span class="st">|cyber"</span>)</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>toks_daten_search2 <span class="ot">&lt;-</span> <span class="fu">kwic</span>(toks, <span class="at">pattern =</span> search_pattern2, </span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                           <span class="at">valuetype =</span> <span class="st">"regex"</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>                           <span class="at">window =</span> <span class="dv">5</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>                           <span class="at">case_insensitive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co"># add id and type of search indicator </span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>business_search2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(toks_daten_search2) <span class="sc">%&gt;%</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">ID =</span> <span class="fu">as.numeric</span>(docname),</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">narrow =</span> <span class="dv">1</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">c</span>(ID, narrow))</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co"># remove duplicated rows </span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">duplicated</span>(business_search1<span class="sc">$</span>ID))  </span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>duplicate_rows <span class="ot">&lt;-</span> business_search2[<span class="fu">duplicated</span>(business_search2<span class="sc">$</span>ID) <span class="sc">|</span> <span class="fu">duplicated</span>(business_search2<span class="sc">$</span>ID, <span class="at">fromLast =</span> <span class="cn">TRUE</span>), ]</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>business_search2 <span class="ot">&lt;-</span> business_search2[<span class="sc">!</span><span class="fu">duplicated</span>(business_search2<span class="sc">$</span>ID), ]</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co"># save </span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(business_search2, <span class="at">file =</span> <span class="st">"./data/narrow_search_businesses.RData"</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co"># clean work space remove what is no longer needed </span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(col2, col3, col2_clean, duplicate_rows, multiword2, multiword3, search_pattern1, search_pattern2)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co"># 04. Explorations of manual search results  ----</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co"># 04.01 Data preparation ----</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="co"># create a df with all variables for the business with an indicator of broad or narrow search</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"./data/broad_search_businesses.RData"</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"./data/narrow_search_businesses.RData"</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>business_search <span class="ot">&lt;-</span> <span class="fu">left_join</span>(business_search1, business_search2, <span class="at">by =</span> <span class="st">"ID"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">narrow =</span> <span class="fu">coalesce</span>(narrow, <span class="dv">0</span>))</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(business_search, <span class="at">file =</span> <span class="st">"./data/both_search_businesses.RData"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exploration-of-the-selected-businesses" class="level4">
+<h4 class="anchored" data-anchor-id="exploration-of-the-selected-businesses"><strong>Exploration of the selected businesses</strong></h4>
+<p>By comparing the two searches I was able to get a good overview of what it can mean. As expected the second more narrow search patter did result in fewer observations. More than half the observations of the broader search this shows a drastic difference and brings up the question of being to rigid.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/no_searches2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="businesses-over-time-by-year" class="level4">
+<h4 class="anchored" data-anchor-id="businesses-over-time-by-year"><strong>Businesses over time by year</strong></h4>
+<p>First look shows that there are some peaks around 2007, 2010, 2014, 2017 and 2021/22. These peaks are present in both of the search variants used the general number of businesses does vary but the overall pattern is similar except the peak around 2017 is no longer present with the narrow search. What could have been the difference? Another interesting point is around 2013 and 2014. Looking at the highest and lowest values there are definitely large differences per year but how does it look over time by sessions?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/businesses_years.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="businesses-over-time-by-session" class="level4">
+<h4 class="anchored" data-anchor-id="businesses-over-time-by-session">Businesses over time by session</h4>
+<p>As one would expect the sessions with the most discussed are comparable with the years submitted. Not in all sessions the broad topic of data security is discussed to the same extent. There are some sessions with a high number of businesses discussed.</p>
+<p>Some possible explanations:</p>
+<ul>
+<li><p>2017 and 2018 Cambridge Analyitca scandal, Facebook data has been used to specifically target.</p></li>
+<li><p>2021 and 2022 during and aftermath od the Covid-19 pandemic and the question of how e.g.&nbsp;contact data is handled.</p></li>
+<li><p>2016 not sure why this is in the list</p></li>
+<li><p>2013 for the narrow search not sure why this is in the list</p></li>
+<li><p>2010 was the time when the discussion of Open Government Data in Switzerland was taking place.</p></li>
+</ul>
+</section>
+<section id="most-frequent-words" class="level4">
+<h4 class="anchored" data-anchor-id="most-frequent-words"><strong>Most frequent words</strong></h4>
+<p>Comparing the most used tokens it is visible that the narrow search does have more words regarding financial topics, patient data, or tax data. The broader search seems to focus on concepts such as “bekämpfung”, “gesundheitswesen” rather than topics focusing on individual data security. :<img src="graphs/frq_token_broad.png" class="img-fluid"></p>
+<p><img src="graphs/frq_token_narrow.png" class="img-fluid"></p>
+</section>
+<section id="topic-models" class="level4">
+<h4 class="anchored" data-anchor-id="topic-models"><strong>Topic models</strong></h4>
+<p>This was based on the expectation or question if the sessions can be organised around topics. For this focused on the narrow search. The classic LDA model is not very helpful there is no clear topics based on the top 10 words of each topic. Therefore the idea is to look if the time component shows a difference between the 13 topics. Maybe there are some changes over time with peaks where the sessions would be?</p>
+<p>Looking at the results of the structured topic model, all of the topics seem to be present over all the years except for topic 1 and 7. I would need to have done a more explorative approach to make some concrete assumptions but this first STM indicates that there are probably fewer topics and that in the beginning of the time line the topics are more district.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/stm_results_1_6.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/stm_results_7_13.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="using-chatgpt" class="level3">
+<h3 class="anchored" data-anchor-id="using-chatgpt"><strong>Using chatGPT</strong></h3>
+<p>The first idea was to have chatGPT to classify all the business into 0 and 1 in order to compare it to the manually selected business. However, the API does have token limits that are exceeded by doing this. The tokens per month are 200’000 and all the business together wit the prompt where about 700’000 tokens. I therefore was unable to do this in the time frame. To find a solution on how I could still use chatGPT I calculated different possibilities and did settle on the idea to use it to get a “quality check” on the manually done selection.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 05.03 chatGPT as a quality check ----</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#  ChatGPT call with batches of text with a one minute pause </span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 05.03.01 preparation of batches </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"./data/broad_search_businesses.RData"</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>text_batches <span class="ot">&lt;-</span> business_search1 <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">text =</span> <span class="fu">paste0</span>(ID, <span class="st">": "</span>, Title)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(text) <span class="sc">%&gt;%</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">split</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(.) <span class="sc">%/%</span> <span class="dv">26</span> <span class="sc">+</span> <span class="dv">1</span>) <span class="co"># Split into batches of 30 rows</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># create empty list to store results</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>all_results <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 05.03.02 iteration over created text batches</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(text_batches)) {</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  batch <span class="ot">&lt;-</span> text_batches[[i]]</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The prompt for the current batch</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  prompt <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Allocate separately to the provided texts a value of 1 if </span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"it can be considered to talk about the data security of the Swiss Population, </span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"especially considering the definition eigencapital: We argue that the digital information available</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"about an individual, accumulated over one's life and encapsulating the totality of her relations as </span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"expressed through digital traces, is a form of capital.</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"If the provided texts do not fit into the before-described setting, set a value of 0.</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Provide the results while keeping the ID numbers in front of the : the texts provide.</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Finally, give a one-sentence reasoning for the classification.</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Output the response as JSON object keep the format the same for all outputs. </span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="st">    The output need to be in the following format:"</span>,</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"  </span><span class="sc">\"</span><span class="st">id</span><span class="sc">\"</span><span class="st">: {</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"      </span><span class="sc">\"</span><span class="st">id</span><span class="sc">\"</span><span class="st">: ##,</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"      </span><span class="sc">\"</span><span class="st">reasoning</span><span class="sc">\"</span><span class="st">: ## text ##,</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">"      </span><span class="sc">\"</span><span class="st">value</span><span class="sc">\"</span><span class="st">: ##</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">"  },</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Here are the texts to classify:</span><span class="sc">\n</span><span class="st">"</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">paste</span>(batch<span class="sc">$</span>text, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># function askChatGPT</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  answer_json <span class="ot">&lt;-</span> <span class="fu">askChatGPT</span>(<span class="at">prompt =</span> prompt, api_key)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="co"># clean JSON </span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  cleaned_json <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"^```json</span><span class="sc">\\</span><span class="st">n|```$"</span>, <span class="st">""</span>, answer_json)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="co"># save batches </span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write</span>(cleaned_json, <span class="fu">paste0</span>(<span class="st">"quality_check_batch_"</span>, i, <span class="st">".json"</span>))</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="co"># append results </span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  all_results[[i]] <span class="ot">&lt;-</span> cleaned_json</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="co"># pause for 1 minute to avoid overwhelming the API</span></span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">Sys.sleep</span>(<span class="dv">60</span>)</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(all_results, <span class="at">file =</span> <span class="st">"chatGPT_results.RData"</span>)</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a><span class="co"># 05.03.03 Getting the JSON Files into a dataframe ----</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize an empty list to store data frames</span></span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>all_batches <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through the batches of classified data </span></span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>batch_number <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">51</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> batch_number) {</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  json_file <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(<span class="at">txt =</span> <span class="fu">paste0</span>(<span class="st">"quality_check_batch_"</span>, i, <span class="st">".json"</span>))</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  batch_df <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, <span class="fu">lapply</span>(json_file, as.data.frame))</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  <span class="co"># append data frame to list</span></span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  all_batches[[i]] <span class="ot">&lt;-</span> batch_df</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>gpt_classification <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, all_batches) <span class="co"># make one df out </span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(gpt_classification, <span class="at">file =</span> <span class="st">"gpt_classification.RData"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="comparing-the-chatgpt-and-manual-search" class="level4">
+<h4 class="anchored" data-anchor-id="comparing-the-chatgpt-and-manual-search"><strong>Comparing the chatGPT and manual search</strong></h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/no_searches3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="businesses-over-time-by-year-all-three-searches" class="level4">
+<h4 class="anchored" data-anchor-id="businesses-over-time-by-year-all-three-searches"><strong>Businesses over time by year all three searches</strong></h4>
+<p>The peaks around 2010 and the Covid-19 Pandemic are still visible, when considering all three levels around that time the discussion or at least the number of submitted businesses concerning data security and individual data seems to be strongest.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/businesses_years_three.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="businesses-over-time-by-session-all-three-searches" class="level4">
+<h4 class="anchored" data-anchor-id="businesses-over-time-by-session-all-three-searches"><strong>Businesses over time by session all three searches</strong></h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphs/businesses_sessions_three.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+</section>
+<section id="concluding-remarks" class="level2">
+<h2 class="anchored" data-anchor-id="concluding-remarks"><strong>Concluding remarks</strong></h2>
+<p>The analysis of the Swiss Parliament data is a good first exploration and gives somewhat good overview. Comparing different the three search types show that being to strict can result in a limited set of business to work with but this does not have to be bad the general pattern is still visible. However the analysis needs to be further developed to make concrete statements about the topic. The previous posed research question can be answered to some extent.</p>
+<p>How do the frequency of submitted business on individual data security within the Swiss Parliament change over time?</p>
+<p>The Sommersession 2010 is the one where in all three searches the frequency of businesses was the highest and as expected there are some peaks around years where there have been events raising questions on data security such as the Open Government Data debate (around 2010), the Cambridge Analytica Scandal (around 2018) and finally the Covid-19 pandemic (around 2021/22). Indicating that the Swiss Parliament is talking about and reacting to events. This link would need to be explored further. Over all there is a trend towards more businesses that include aspects of data security. Not surprising considering the social developments. It therefore sparked my interest to further engage in the topic of society and data.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Literatur</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fourcade" class="csl-entry" role="listitem">
+Fourcade, Marion, und Kieran Healy. 2021. <em>Rationalized Stratification</em>.
+</div>
+<div id="ref-fourcade2024" class="csl-entry" role="listitem">
+Fourcade, Marion, und Kieran Joseph Healy. 2024. <em>The ordinal society</em>. Cambridge, Massachusetts: Harvard University Press.
+</div>
+<div id="ref-zumbach2020" class="csl-entry" role="listitem">
+Zumbach, David. 2020. <em>swissparl: Interface to the Webservices of the Swiss Parliament.</em> <a href="https://CRAN.R-project.org/package=swissparl">https://CRAN.R-project.org/package=swissparl</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopiert");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopiert");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Lisa Götschi</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This website is built with <a href="https://github.com/lisagoetschi" target="_blank">github</a>, <a href="https://www.r-project.org/about.html" target="_blank">R</a> and <a href="https://quarto.org/" target="_blank">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
