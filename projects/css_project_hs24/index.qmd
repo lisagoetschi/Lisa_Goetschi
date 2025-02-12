@@ -16,7 +16,7 @@ For a Computational Social Science course in the Fall Semester of 2024 I have ex
 
 Looking at data from the Swiss parliament such as businesses, and possibly corresponding session transcripts concerning the topic of data security and how to handle data produced (by the private sector). Roughly building on the concept by Fourcade and Healy (2024) of the Ordinal Society in which the measuring, ranking and ordering of people based on data is the underling concept [@fourcade2024]. In their work the concept of *eigencapital* is discussed. "We argue that the digital information available about an individual, accumulated over one's life and encapsulating the totality of her relations as expressed through digital traces, is a form of capital. In contrast to Bourdieu, we emphasize the growing technological inscription of this capital and its high dimensionality. Because of this, we call it eigencapital." [@fourcade] This is what sparked the interest in the topic and how this can be applied to Switzerland.
 
-Research Question The main question I focus on is:
+Research Question the main question I focus on is:
 
 1.  How do the frequency of submitted business on individual data security within the Swiss Parliament change over time?
 
