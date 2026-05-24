@@ -60,14 +60,14 @@
     "href": "cv.html#ausbildung",
     "title": "CV",
     "section": "Ausbildung",
-    "text": "Ausbildung\n\nMaster of Arts in Soziologie Universität Bern Sep. 2022 - heute\nMono: Soziologie\nmit Gaststudium an der Universität Basel von Sep. 2023 bis Jul. 2024\n\nBachelor of Arts in Sozialwissenschaften Universität Zürich Sep. 2018 - Jul. 2022\nMajor: Soziologie und Minor: Geographie\nAbschlussnote: 5.1\nBachelorarbeit: Subjektives Wohlbefinden – ein Graben zwischen Stadt und Land?\n\nGymnasiale Matur Gymnasium am Münsterplatz Basel Aug. 2014 - Jun. 2017\nBilinguale Matur (D/E) & International Baccalaureate (IB)\nSchwerpunkt: Englisch\nMaturarbeit: Sustainable Fashion - Comparison of two brands H&M conscious and Coop Naturaline."
+    "text": "Ausbildung\n\nPhD in Soziologie: Feb. 2026 - heute\nUniversität Bern\n\nMaster of Arts in Soziologie: Sep. 2022 - Dez. 2025\nUniversität Bern\nmit Gaststudium an der Universität Basel von Sep. 2023 bis Jul. 2024\n\nBachelor of Arts in Sozialwissenschaften: Sep. 2018 - Jul. 2022\nUniversität Zürich\n\nGymnasiale Matur & International Baccalaureate (IB): Aug. 2014 - Jun. 2017\nGymnasium am Münsterplatz Basel"
   },
   {
     "objectID": "cv.html#arbeitserfahrung",
     "href": "cv.html#arbeitserfahrung",
     "title": "CV",
     "section": "Arbeitserfahrung",
-    "text": "Arbeitserfahrung\n\nCo-founder fragnach Dez 2020 bis heute\nfragnach.ch Zürich\nQuantitative Methodenberatung und Projektbetreuung\nErstellen von Umfragen\nRecherche von Theorien und Studien\n\nHilfsassistentin im Projekt: “The neighborhood in the cloud” Mai 2022 bis Jul. 2024\nUniversität Bern - Institut für Soziologie\nUnterstützung in der Umsetzung des Projektes z.B. Daten- und Literaturrecherche, Aufbereiten von Daten, eigenständige quantitative Analysen.\n\nTutorin für Techniken wissenschaftlichen Arbeitens Sep. 2021 bis Feb. 2022\nUniversität Zürich\nLeiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen\n\nTutorin für empirische Sozialforschung und Umfragemethoden Sep. 2020 bis Jun. 2022\nUniversität Zürich\nLeiten und organisieren von Tutoraten für Studierende & Leistungsnachweiskorrekturen, Gruppenbetreuung"
+    "text": "Arbeitserfahrung\n\nAssistenin/Doktorandin im SNFS Starting Grants Projekt: “Moving up or stepping down?”\nFeb. 2026 - heute\nUniversität Bern - Institut für Soziologie\n\nWissenschaftliche Mitarbeiterin\nOkt. 2024 - Dez. 2025\nKanton Aargau - Statistik Aargau - Data Services\n\nCo-founder fragnach\nDez. 2020 bis Dez. 2026\nfragnach.ch Zürich\n\nHilfsassistentin bei Dr. Robert Schäfer\nDez. 2023\nUniversität Basel - Departement Gesellschaftswissenschaften\n\nHilfsassistentin im Projekt: “The Neighborhood in the Cloud”\nMai 2022 bis Jul. 2024\nUniversität Bern - Institut für Soziologie\n\nTutorin für Techniken wissenschaftlichen Arbeitens\nSep. 2021 bis Feb. 2022\nUniversität Zürich - Soziologischen Institut\n\nTutorin für empirische Sozialforschung und Umfragemethoden\nSep. 2020 bis Jun. 2022\nUniversität Zürich - Soziologischen Institut"
   },
   {
     "objectID": "cv.html#weitere-erfahrung",
@@ -81,14 +81,14 @@
     "href": "cv.html#it-kompetenzen",
     "title": "CV",
     "section": "IT Kompetenzen",
-    "text": "IT Kompetenzen\n\n\n\nStatistiksoftware R & STATA\nsehr gute Kenntnisse\n\n\nMicrosoft Office (Word, Powerpoint und Excel)\nsehr gute Kenntnisse\n\n\nAdobe InDesign, Illustrator\ngute Kenntnisse\n\n\nSNAP & QGIS\nGrundkentnisse\n\n\nWordPress, CSM Magnolia\nGrundkentnisse"
+    "text": "IT Kompetenzen\n\n\n\n\n\n\n\nStatistiksoftware R\nsehr gute Kenntnisse\n\n\nMicrosoft Office (Word, Powerpoint und Excel)\nsehr gute Kenntnisse\n\n\nStatistiksoftware STATA\ngute Kenntnisse\n\n\nAdobe InDesign, Illustrator\ngute Kenntnisse\n\n\nPython\nGrundlagenkenntnisse\n\n\nSNAP & QGIS\nGrundlagenkenntnisse"
   },
   {
     "objectID": "cv.html#sprachen",
     "href": "cv.html#sprachen",
     "title": "CV",
     "section": "Sprachen",
-    "text": "Sprachen\n\n\n\nDeutsch\nMuttersprache\n\n\nEnglisch\nZweisprachige Matur (C1)\n\n\nFranzösisch\nGrundlagenkenntisse (A1)\n\n\nItalienisch\nGrundlagenkenntisse (A1)"
+    "text": "Sprachen\n\n\n\nDeutsch\nMuttersprache\n\n\nEnglisch\nZweisprachige Matur (C1)"
   },
   {
     "objectID": "cv.html#hobbys-und-interessen",
@@ -138,5 +138,26 @@
     "title": "Computational Social Science short project results",
     "section": "Concluding remarks",
     "text": "Concluding remarks\nThe analysis of the Swiss Parliament data is a good first exploration and gives somewhat good overview. Comparing different the three search types show that being to strict can result in a limited set of business to work with but this does not have to be bad the general pattern is still visible. However the analysis needs to be further developed to make concrete statements about the topic. The previous posed research question can be answered to some extent.\nHow do the frequency of submitted business on individual data security within the Swiss Parliament change over time?\nThe Sommersession 2010 is the one where in all three searches the frequency of businesses was the highest and as expected there are some peaks around years where there have been events raising questions on data security such as the Open Government Data debate (around 2010), the Cambridge Analytica Scandal (around 2018) and finally the Covid-19 pandemic (around 2021/22). Indicating that the Swiss Parliament is talking about and reacting to events. This link would need to be explored further. Over all there is a trend towards more businesses that include aspects of data security. Not surprising considering the social developments. It therefore sparked my interest to further engage in the topic of society and data."
+  },
+  {
+    "objectID": "cv_timeline.html",
+    "href": "cv_timeline.html",
+    "title": "Vertical Timeline Example",
+    "section": "",
+    "text": "&lt;div class=\"timeline\"&gt;\n\n  &lt;div class=\"event\"&gt;\n    &lt;div class=\"year\"&gt;1983&lt;/div&gt;\n\n    &lt;div class=\"marker\"&gt;\n      &lt;div class=\"dot\"&gt;&lt;/div&gt;\n    &lt;/div&gt;\n\n    &lt;div class=\"content\"&gt;\n      &lt;h3&gt;Title&lt;/h3&gt;\n      &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n  &lt;div class=\"event\"&gt;\n    &lt;div class=\"year\"&gt;1984&lt;/div&gt;\n\n    &lt;div class=\"marker\"&gt;\n      &lt;div class=\"dot\"&gt;&lt;/div&gt;\n    &lt;/div&gt;\n\n    &lt;div class=\"content\"&gt;\n      &lt;h3&gt;Another Event&lt;/h3&gt;\n      &lt;p&gt;\n        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.\n      &lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "timeline.html",
+    "href": "timeline.html",
+    "title": "CV Timeline",
+    "section": "",
+    "text": "flowchart TD\n    A(Master in Sociology) --&gt; B(Round edge)\n    B --o C{Decision}\n    C --&gt; D[Result one]\n    C --&gt; E[Result two]\n\n\n\n\n\n\n\n\n\n\n\ntimeline \n    section BA \n    2018 : Start BA in Social Sciences\n    2022 : End BA in Social Sciences\n    section MA\n    2022 : Start MA\n    2026 : MA in Sociology\n\n\n\n\n\n\n\n\n\n\n\ngantt\n    title CV\n    dateFormat MM-YYYY\n    axisFormat %m-%Y\n\n    section Ausbildung\n        PhD in Sociology      :a1, 02-2026, 02-2030\n        MA in Sociology       :a2, 09-2022, 01-2026\n        BA in Social Sciences :a3, 09-2018, 08-2022\n        MA Abschluss : milestone, m1, 01-2026, 0d\n    section Arbeitserfahrung\n    HiWi                  :a4, 08-2022, 06-2024\n    Wiss. Mitarbeiterin Kanton Aargau : a5, 10-2024, 12-2025"
+  },
+  {
+    "objectID": "cv.html#weiterbildungen",
+    "href": "cv.html#weiterbildungen",
+    "title": "CV",
+    "section": "Weiterbildungen",
+    "text": "Weiterbildungen\n\nCAS Hochschullehre\nMai 2026 - heute\nUniversität Bern\n\nData Management & Open Government Data \nAug. 2025\nBerner Fachhochschule - Institut Public Sector Transformation\n\nFundraising Academy\nJan. 2021 - Apr. 2021\nDigital Innovation Lab AG, Bern"
   }
 ]
