@@ -1,0 +1,33 @@
+---
+title: "About me"
+about:
+  template: broadside
+  image: images/about_image.png
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/lisa-goetschi/
+    - icon: github
+      text: Github
+      href: https://github.com/lisagoetschi
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+---
+
+::: {style="text-align: justify;"}
+I am currently a PhD student at the Institute of Sociology at the University of Bern.
+
+In addition to social inequality and social mobility, I am particularly interested in the emergence of hierarchies and social distinctions. I enjoy exploring questions that quantitatively examine socioeconomic, sociocultural, and spatial dimensions, such as how social background and ethnicity shape career opportunities.
+
+Previously, I earned a master’s degree in sociology from the University of Bern, including two semesters at the University of Basel, as well as a bachelor’s degree in sociology and geography from the University of Zurich.
+:::
+
+```{=html}
+<br>
+<div class="container">
+  <div class="block"> <a href="cv.qmd">CV</a></div>
+  <div class="block"><a href="projects.qmd">Projects</a></div>
+</div>
+```

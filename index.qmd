@@ -17,9 +17,11 @@ format:
 ---
 
 ::: {style="text-align: justify;"}
-*Nach meinem Bachelor in Soziologie und Geografie in Zürich habe ich meinen Master in Soziologie an der Universität Bern begonnen. Sowie ein Gaststudium an der Universität Basel absolviert. Durch meine frühere Tätigkeit als Tutorin und die Arbeit als wissenschaftliche Hilfsassistentin hat sich mein Interesse an quantitativer Datenanalyse und der Wissenschaft deutlich herauskristallisiert.*
+Derzeit bin ich Doktorandin am Institut für Soziologie der Universität Bern.
 
-*Neben quantitativen Methoden interessieren mich innerhalb der Soziologie besonders Sozialkapitaltheorien, soziale Ungleichheit und Fragestellungen, die sich (on- & offline) intersektional mit räumlichen und sozioökonomischen Aspekten befassen.*
+Neben sozialer Ungleichheit und sozialer Mobilität interessiert mich insbesondere das Entstehen von Hierarchien und sozialen Unterscheidungen. Ich beschäftige mich gerne mit Fragestellungen, die sozioökonomische, soziokulturelle und räumliche Aspekte quantitativ erforschen, beispielsweise wie soziale Herkunft und Ethnie mit Karrieremöglichkeiten in Verbindung stehen.
+
+Zuvor habe ich einen Master in Soziologie an der Universität Bern mit einem Gaststudium an der Universität Basel absolviert sowie einen Bachelor in Soziologie und Geografie an der Universität Zürich.
 :::
 
 ```{=html}

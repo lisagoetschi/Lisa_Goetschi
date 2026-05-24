@@ -1,0 +1,124 @@
+---
+title: "CV"
+about: 
+  template: trestles
+  image: images/cv_portait.png
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/lisa-goetschi/
+    - icon: github
+      text: Github
+      href: https://github.com/lisagoetschi
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+---
+
+## Education
+
+::: cv.text
+**PhD in Sociology**: Feb. 2026 - on going \
+University of Bern
+
+------------------------------------------------------------------------
+
+**Master of Arts in Sociology:** Sep. 2022 - Dec. 2025\
+University of Bern\
+*mit Gaststudium an der Universität Basel von Sep. 2023 bis Jul. 2024*
+
+------------------------------------------------------------------------
+
+**Bachelor of Arts in Sozialwissenschaften**: Sep. 2018 - Jul. 2022\
+Universität Zürich
+
+------------------------------------------------------------------------
+
+**Gymnasiale Matur** **& International Baccalaureate (IB)**: Aug. 2014 - Jun. 2017\
+Gymnasium am Münsterplatz Basel
+:::
+
+## Arbeitserfahrung
+
+::: cv.text
+Doctoral Resarcher in the SNFS Starting Grants Project: ["Moving up or stepping down?"](https://data.snf.ch/grants/grant/218314)\
+**Feb. 2026 - on going \
+***University of Bern - Institute of Sociology*
+
+------------------------------------------------------------------------
+
+Wissenschaftliche Mitarbeiterin\
+**Okt. *2024 - Dez. 2025\
+****Kanton Aargau - Statistik Aargau - Data Services*
+
+------------------------------------------------------------------------
+
+Co-founder fragnach\
+**Dez. 2020 bis Dez. 2026\
+***fragnach.ch Zürich*
+
+------------------------------------------------------------------------
+
+Hilfsassistentin bei Dr. Robert Schäfer\
+**Dez. 2023\
+***Universität Basel - Departement Gesellschaftswissenschaften*
+
+------------------------------------------------------------------------
+
+Hilfsassistentin im Projekt: "The Neighborhood in the Cloud"\
+**Mai 2022 bis Jul. 2024**\
+*Universität Bern - Institut für Soziologie*
+
+------------------------------------------------------------------------
+
+Tutorin für Techniken wissenschaftlichen Arbeitens\
+**Sep. 2021 bis Feb. 2022\
+***Universität Zürich - Soziologischen Institut*
+
+------------------------------------------------------------------------
+
+Tutorin für empirische Sozialforschung und Umfragemethoden\
+**Sep. 2020 bis Jun. 2022**\
+*Universität Zürich - Soziologischen Institut*
+:::
+
+## Weiterbildungen
+
+::: cv.text
+CAS Hochschullehre\
+**Mai 2026 - heute**\
+*Universität Bern*
+
+------------------------------------------------------------------------
+
+Data Management & Open Government Data *\
+***Aug. 2025\
+***Berner Fachhochschule - Institut Public Sector Transformation*
+
+------------------------------------------------------------------------
+
+Fundraising Academy\
+**Jan. 2021 - Apr. 2021\
+***Digital Innovation Lab AG, Bern*
+
+------------------------------------------------------------------------
+:::
+
+## IT Kompetenzen
+
+|                                               |                      |
+|-----------------------------------------------|----------------------|
+| Statistiksoftware R                           | sehr gute Kenntnisse |
+| Microsoft Office (Word, Powerpoint und Excel) | sehr gute Kenntnisse |
+| Statistiksoftware STATA                       | gute Kenntnisse      |
+| Adobe InDesign, Illustrator                   | gute Kenntnisse      |
+| Python                                        | Grundlagenkenntnisse |
+| SNAP & QGIS                                   | Grundlagenkenntnisse |
+
+## Sprachen
+
+|          |                          |
+|----------|--------------------------|
+| Deutsch  | Muttersprache            |
+| Englisch | Zweisprachige Matur (C1) |

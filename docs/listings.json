@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/blog.html",
+    "items": []
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/css_project_hs24/index.html",
@@ -10,7 +14,13 @@
     ]
   },
   {
-    "listing": "/blog.html",
-    "items": []
+    "listing": "/projects.en.html",
+    "items": [
+      "/projects/css_project_hs24/index.html",
+      "/projects/besserwisserin/index.html",
+      "/projects/cia/index.html",
+      "/projects/twitter_project/index.html",
+      "/projects/bachelor_arbeit/index.html"
+    ]
   }
 ]
